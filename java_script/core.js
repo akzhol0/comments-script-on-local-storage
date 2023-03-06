@@ -65,3 +65,31 @@ btnSubmit.addEventListener('click', () => {
     inpName.value = '';
     inpComm.value = '';
 });
+
+// btnSubmit.addEventListener('click', () => {
+//     if (inpName.value === '' || inpComm.value === '') {
+//         res.textContent = 'Write something!';
+//         return;
+//     }
+
+//     res.textContent = '';
+//     counter++;
+//     const userObj = {
+//         name: inpName.value,
+//         comm: inpComm.value,
+//         id: counter,
+//     }; const objStringfy1 = JSON.stringify(userObj);
+//     localStorage.setItem(`user${counter}`, objStringfy1);
+
+//     const user = localStorage.getItem(`user${counter}`);
+//     const userParse = JSON.parse(user);
+//     const example = `<div class="comm">
+//                         <div class="picture">
+//                             <img src="assets/images/Sample_User_Icon.png">
+//                         </div>
+//                         <div><p>${userParse.name}</p></div>
+//                         <div><p>${userParse.comm}</p></div>
+//                     </div>`;
+//     CommentsWrapper.insertAdjacentHTML('afterbegin', example)
+//     inpName.value = '';
+//     inpComm.value = '';
