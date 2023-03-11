@@ -5,7 +5,7 @@ const inpComm = document.querySelector('.user-comm-inp');
 const mainWrapper = document.querySelector('.main-container')
 const commentCounts = document.querySelector('.counts-comm');
 const res = document.querySelector('#res');
-let counter = 0;
+let counter = localStorage.length;
 
 setInterval(() => {
     commentCounts.textContent = `${CommentsWrapper.children.length} Comments`;
